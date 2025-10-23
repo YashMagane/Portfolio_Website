@@ -1,0 +1,49 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+}
+
+/* Styling the world map container */
+#map-container {
+    margin: 20px 0;
+    max-width: 100%;
+    height: auto;
+}
+
+/* SVG styling for countries */
+.country {
+    fill: #cccccc; /* Default country color */
+    stroke: #333; /* Border color */
+    stroke-width: 0.5;
+    cursor: pointer;
+    transition: fill 0.3s ease; /* Smooth transition for hover */
+}
+
+/* Hover effect when a user hovers over a country */
+.country:hover {
+    fill: #ffcc00;
+}
+
+/* Highlight explored countries */
+.selected {
+    fill: #00b300; /* Green for explored countries */
+}
+
+/* Button style */
+#reset-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-top: 10px;
+    cursor: pointer;
+}

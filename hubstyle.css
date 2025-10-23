@@ -1,0 +1,116 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the hub in the middle of the page */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #081b29;
+}
+
+/* Navigation Bar */
+header {
+    background: transparent;
+    padding: 20px 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    transition: background 0.3s ease;
+}
+
+header.scrolled {
+    background: #081b29;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+nav ul li a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #00abf0;
+}
+
+/* Hub Container */
+#hub {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+}
+
+/* Section Header */
+.title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Grid Layout for Hub Items */
+.hub-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Hub Item (Each App) */
+.hub-item {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.hub-item:hover {
+    transform: scale(1.05);
+}
+
+/* Image Styling */
+.hub-image img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Hub Item Text */
+.hub-info h3 {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.hub-info p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Link Button */
+.hub-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    font-size: 1.2rem;
+}
